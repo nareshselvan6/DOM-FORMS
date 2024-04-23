@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <header>
+      <h1  id="title"> DOM MANIPULATION WITH FORMS </h1>
+      <p id="description"> This Task Based on Forms Created Using HTML , CSS , BOOTSTRAP</p>
+    </header>
+
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+
+    <div class="container">
+        <form id="form">
+        <div class="form-group">
+                <form action="" id="form" >
+                <label for="first-name" class="mx-1 ">FirstName  </label>
+                <input type="text" class="my-2" id="first-name" placeholder="Enter your first name" required>
+
+
+                <label for="lastname" class="mx-1 ">LastName </label>
+                <input type="text" class="my-2" id="last-name" placeholder="Enter your last name" required>
+
+                <label for="gender" class="mx-1 my-2" > Gender </label>
+                <div class="d-inline px-2 ">
+                  <input type="radio"  name="gender" id="male" value="male" required>
+                    <label for="male" class="mx-1 d-inline ">Male</label>  
+                </div>
+                <div class="d-inline px-2 ">
+                  <input type="radio" name="gender" id="female" class="mx-1 " value="female" required>
+                    <label for="female" class="mx-1 d-inline float-none ">Female</label>
+                </div>
+                <br>
+
+                <label for="email" class="mx-1 my-2  ">Email</label>
+                <input type="email"  class="my-2 " id="email" placeholder="Enter your email" required>
+
+                <label for="pincode" class="mx-1 my-2 ">Pincode</label>
+                <input type="text" class="my-2 " id="pincode" placeholder="Enter your pincode" required>
+
+                <label for="address " class="p-2 mx-1 my-2  d-flex  ">Address</label>
+                <textarea name="address" class="my-2 " id="address" cols="30" rows="3" placeholder="Enter your address" required></textarea>
+
+                <div class="foods my-1">
+                    <label for="fav-foods "class=" mt-2 mb-2 my-2 " required>Select Your Fav Foods :</label>
+                    <div class="col-12 my-2 ">
+
+                    <input type="checkbox" class="mx-1 mb-2 " name="biriyani" id="biriyani">
+                    <label for="biriyani" class="mx-1 mb-1 d-inline-block  "  >Biriyani</label>
+                    
+
+                    <input type="checkbox" class="mx-1 mb-2 " id="pizza">
+                    <label for="pizza" class="mx-1 mb-2 d-inline-block ">Pizza</label>
+                    
+
+                    <input type="checkbox" class="mx-1 mb-2 " id="burger" >
+                    <label for="burger" class="mx-1 mb-2 d-inline-block ">Burger</label>
+                    
+                    <input type="checkbox" class="mx-1 mb-2 " id="noodles">
+                    <label for="noodles" class="mx-1 mb-2 d-inline-block ">Noodles</label>
+                    
+                    <input type="checkbox" class="mx-1 mb-2 " id="pasta" > 
+                    <label for="pasta" class="mx-1 mb-2 d-inline-block ">Pasta</label>
+                    
+                    </div>
+                </div>
+
+                <div class="state my-2 ">
+                    <label for="states" class="m-2 my-2 ">Select Your State</label>
+                    <select name="states" id="states" class="border-1 my-2  ">
+                        <option value="tamilnadu">Tamilnadu</option>
+                        <option value="andhrapradesh">AndhraPradesh</option>
+                        <option value="telangana">Telangana</option>
+                        <option value="kerala">Kerala</option>
+                        <option value="karnataka">karnataka</option>
+
+                    </select>
+  
+                </div>
+               
+
+                <button type="submit" id="submit" class="btn btn-primary my-2  d-inline-block  ">SUBMIT</button>
+
+                <div id="table" >
+                    <label for="table" class="d-flex justify-content-center  text-decoration-underline"><h2> Submited Forms </h2></label>
+                    <table class="table table-responsive m-2   ">
+                        <thead class="table-bordered border-2 border-black  ">
+                            <tr >
+                            <th class="col-1 ">FirstName</th>
+                            <th>LastName</th>
+                            <th>Email</th>
+                            <th>Address</th>
+                            <th>Pincode</th>
+                            <th>Gender</th>
+                            <th>Fav Foods</th>
+                            <th>State</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                </form>
+            </div>
+    </div>
+
+
+
+  </body>
+</html>
